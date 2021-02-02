@@ -1,0 +1,18 @@
+my-snowflake-db:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: qr64928.ap-south-1
+
+      # User/password auth
+      user: kiran
+      password: Welcome@999
+
+      role: [user role]
+      database: training_db
+      warehouse: training_warehouse
+      schema: training_schema
+      threads: [1 or more]
+      client_session_keep_alive: true
+      query_tag: [anything]
